@@ -7,6 +7,220 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    <!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .mermaid {
+            max-width: 100%;
+            margin: auto;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .node rect {
+            fill: #4caf50;
+            stroke: #333;
+            stroke-width: 1px;
+        }
+        .node text {
+            fill: #fff;
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+        }
+        .edgePath path {
+            stroke: #333;
+            stroke-width: 1px;
+        }
+    </style>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+    <div class="mermaid">
+        graph TD
+            InputLayer[Input Layer]
+            HiddenLayer1[Hidden Layer 1]
+            HiddenLayer2[Hidden Layer 2]
+            OutputLayer[Output Layer]
+
+            subgraph Inputs
+                InputNode1[Input Node 1]
+                InputNode2[Input Node 2]
+                InputNode3[Input Node 3]
+                InputNode4[Input Node 4]
+                InputNode5[Input Node 5]
+                InputNode6[Input Node 6]
+                InputNode7[Input Node 7]
+                InputNode8[Input Node 8]
+                InputNode9[Input Node 9]
+                InputNode10[Input Node 10]
+            end
+
+            subgraph Hidden1
+                HiddenNode1_1[Hidden Node 1-1]
+                HiddenNode1_2[Hidden Node 1-2]
+                HiddenNode1_3[Hidden Node 1-3]
+                HiddenNode1_4[Hidden Node 1-4]
+                HiddenNode1_5[Hidden Node 1-5]
+            end
+
+            subgraph Hidden2
+                HiddenNode2_1[Hidden Node 2-1]
+                HiddenNode2_2[Hidden Node 2-2]
+                HiddenNode2_3[Hidden Node 2-3]
+                HiddenNode2_4[Hidden Node 2-4]
+                HiddenNode2_5[Hidden Node 2-5]
+            end
+
+            subgraph Outputs
+                OutputNode1[Output Node 1]
+                OutputNode2[Output Node 2]
+                OutputNode3[Output Node 3]
+            end
+
+            InputLayer --> InputNode1
+            InputLayer --> InputNode2
+            InputLayer --> InputNode3
+            InputLayer --> InputNode4
+            InputLayer --> InputNode5
+            InputLayer --> InputNode6
+            InputLayer --> InputNode7
+            InputLayer --> InputNode8
+            InputLayer --> InputNode9
+            InputLayer --> InputNode10
+
+            InputNode1 --> HiddenNode1_1
+            InputNode1 --> HiddenNode1_2
+            InputNode1 --> HiddenNode1_3
+            InputNode1 --> HiddenNode1_4
+            InputNode1 --> HiddenNode1_5
+
+            InputNode2 --> HiddenNode1_1
+            InputNode2 --> HiddenNode1_2
+            InputNode2 --> HiddenNode1_3
+            InputNode2 --> HiddenNode1_4
+            InputNode2 --> HiddenNode1_5
+
+            InputNode3 --> HiddenNode1_1
+            InputNode3 --> HiddenNode1_2
+            InputNode3 --> HiddenNode1_3
+            InputNode3 --> HiddenNode1_4
+            InputNode3 --> HiddenNode1_5
+
+            InputNode4 --> HiddenNode1_1
+            InputNode4 --> HiddenNode1_2
+            InputNode4 --> HiddenNode1_3
+            InputNode4 --> HiddenNode1_4
+            InputNode4 --> HiddenNode1_5
+
+            InputNode5 --> HiddenNode1_1
+            InputNode5 --> HiddenNode1_2
+            InputNode5 --> HiddenNode1_3
+            InputNode5 --> HiddenNode1_4
+            InputNode5 --> HiddenNode1_5
+
+            InputNode6 --> HiddenNode1_1
+            InputNode6 --> HiddenNode1_2
+            InputNode6 --> HiddenNode1_3
+            InputNode6 --> HiddenNode1_4
+            InputNode6 --> HiddenNode1_5
+
+            InputNode7 --> HiddenNode1_1
+            InputNode7 --> HiddenNode1_2
+            InputNode7 --> HiddenNode1_3
+            InputNode7 --> HiddenNode1_4
+            InputNode7 --> HiddenNode1_5
+
+            InputNode8 --> HiddenNode1_1
+            InputNode8 --> HiddenNode1_2
+            InputNode8 --> HiddenNode1_3
+            InputNode8 --> HiddenNode1_4
+            InputNode8 --> HiddenNode1_5
+
+            InputNode9 --> HiddenNode1_1
+            InputNode9 --> HiddenNode1_2
+            InputNode9 --> HiddenNode1_3
+            InputNode9 --> HiddenNode1_4
+            InputNode9 --> HiddenNode1_5
+
+            InputNode10 --> HiddenNode1_1
+            InputNode10 --> HiddenNode1_2
+            InputNode10 --> HiddenNode1_3
+            InputNode10 --> HiddenNode1_4
+            InputNode10 --> HiddenNode1_5
+
+            HiddenLayer1 --> HiddenNode1_1
+            HiddenLayer1 --> HiddenNode1_2
+            HiddenLayer1 --> HiddenNode1_3
+            HiddenLayer1 --> HiddenNode1_4
+            HiddenLayer1 --> HiddenNode1_5
+
+            HiddenNode1_1 --> HiddenNode2_1
+            HiddenNode1_1 --> HiddenNode2_2
+            HiddenNode1_1 --> HiddenNode2_3
+            HiddenNode1_1 --> HiddenNode2_4
+            HiddenNode1_1 --> HiddenNode2_5
+
+            HiddenNode1_2 --> HiddenNode2_1
+            HiddenNode1_2 --> HiddenNode2_2
+            HiddenNode1_2 --> HiddenNode2_3
+            HiddenNode1_2 --> HiddenNode2_4
+            HiddenNode1_2 --> HiddenNode2_5
+
+            HiddenNode1_3 --> HiddenNode2_1
+            HiddenNode1_3 --> HiddenNode2_2
+            HiddenNode1_3 --> HiddenNode2_3
+            HiddenNode1_3 --> HiddenNode2_4
+            HiddenNode1_3 --> HiddenNode2_5
+
+            HiddenNode1_4 --> HiddenNode2_1
+            HiddenNode1_4 --> HiddenNode2_2
+            HiddenNode1_4 --> HiddenNode2_3
+            HiddenNode1_4 --> HiddenNode2_4
+            HiddenNode1_4 --> HiddenNode2_5
+
+            HiddenNode1_5 --> HiddenNode2_1
+            HiddenNode1_5 --> HiddenNode2_2
+            HiddenNode1_5 --> HiddenNode2_3
+            HiddenNode1_5 --> HiddenNode2_4
+            HiddenNode1_5 --> HiddenNode2_5
+
+            HiddenLayer2 --> HiddenNode2_1
+            HiddenLayer2 --> HiddenNode2_2
+            HiddenLayer2 --> HiddenNode2_3
+            HiddenLayer2 --> HiddenNode2_4
+            HiddenLayer2 --> HiddenNode2_5
+
+            HiddenNode2_1 --> OutputNode1
+            HiddenNode2_1 --> OutputNode2
+            HiddenNode2_1 --> OutputNode3
+
+            HiddenNode2_2 --> OutputNode1
+            HiddenNode2_2 --> OutputNode2
+            HiddenNode2_2 --> OutputNode3
+
+            HiddenNode2_3 --> OutputNode1
+            HiddenNode2_3 --> OutputNode2
+            HiddenNode2_3 --> OutputNode3
+
+            HiddenNode2_4 --> OutputNode1
+            HiddenNode2_4 --> OutputNode2
+            HiddenNode2_4 --> OutputNode3
+
+            HiddenNode2_5 --> OutputNode1
+            HiddenNode2_5 --> OutputNode2
+            HiddenNode2_5 --> OutputNode3
+
+            OutputLayer --> OutputNode1
+            OutputLayer --> OutputNode2
+            OutputLayer --> OutputNode3
+    </div>
+</body>
+</html>
+
 </body>
 </html>
